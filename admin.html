@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perpustakaan - Admin</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Perpustakaan</div>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Logout</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="admin-dashboard">
+                <h2>Dashboard Admin</h2>
+
+                <h3>Kelola Buku</h3>
+                <button>Tambah Buku</button>
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Code Buku</th>
+                            <th>Nama Buku</th>
+                            <th>Judul Buku</th>
+                            <th>Category Buku</th>
+                            <th>Penulis Buku</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A00013</td>
+                            <td>PHP DASAR</td>
+                            <td>PHP</td>
+                            <td>Buku Pelajaran</td>
+                            <td>Rasmus Ledorf</td>
+                            <td>
+                                <a href="#">Hapus</a>
+                                <a href="#">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Kelola Pengguna</h3>
+
+                <br>
+
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nama User</th>
+                            <th>Email</th>
+                            <th>Alamat</th>
+                            <th>Foto</th>
+                            <th>Phone</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Wisnu</td>
+                            <td>wisnu@gmail.com</td>
+                            <td>Sleman</td>
+                            <td>Ardan.jpg</td>
+                            <td>098822997788</td>
+                            <td>
+                                <a href="#">Hapus</a>
+                                <a href="#">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <hr>
+
+            <p>
+                Sementara untuk bagian ini, admin dapat
+                -menambah. <br>
+                -menghapus. <br>
+                -edit data. <br>
+                -menghapus data user. <br>
+                -melihat histroy peminjaman user. <br>
+            </p>
+        </main>
+    </body>
+</html>

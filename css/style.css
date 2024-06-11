@@ -1,0 +1,461 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #34495e;
+}
+
+/* Banner */
+.banner {
+    background: url('https://via.placeholder.com/1200x400.png?text=Banner+Perpustakaan') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 5rem 1rem;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Pencarian Buku */
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: #ecf0f1;
+    gap: 0.5rem;
+}
+
+.search input[type="text"] {
+    padding: 0.5rem;
+    width: 50%;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: #2980b9;
+}
+
+/* Buku Terbaru */
+.new-books {
+    padding: 2rem 1rem;
+}
+
+.new-books h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.new-books .book-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.new-books .book-list .book {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.new-books .book-list .book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Katalog Buku */
+.filters, .book-list {
+    padding: 2rem 1rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background: #ecf0f1;
+}
+
+.filters label, .filters select {
+    margin-right: 1rem;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.book-list .book {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+/* Detail Buku */
+.book-detail {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.book-detail h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.book-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.book-detail p {
+    margin-bottom: 0.5rem;
+}
+
+.book-detail button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto 0;
+    transition: background 0.3s;
+}
+
+.book-detail button:hover {
+    background: #2980b9;
+}
+
+/* Form Login dan Registrasi */
+.login-form, .register-form {
+    padding: 2rem 1rem;
+    max-width: 400px;
+    margin: auto;
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.login-form h2, .register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-form form, .register-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.login-form form label, .register-form form label {
+    margin-bottom: 0.5rem;
+}
+
+.login-form form input, .register-form form input {
+    padding: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.login-form form button, .register-form form button {
+    padding: 0.5rem;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-form form button:hover, .register-form form button:hover {
+    background: #2980b9;
+}
+
+.login-form p, .register-form p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-form p a, .register-form p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Profil Pengguna */
+.user-profile {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.user-profile h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.user-profile p {
+    margin-bottom: 0.5rem;
+}
+
+.user-profile button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto 0;
+    transition: background 0.3s;
+}
+
+.user-profile button:hover {
+    background: #2980b9;
+}
+
+.user-profile h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.user-profile ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.user-profile ul li {
+    background: #ecf0f1;
+    padding: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* Admin */
+.admin-dashboard {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.admin-dashboard h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.admin-dashboard h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.admin-dashboard button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto 0;
+    transition: background 0.3s;
+}
+
+.admin-dashboard button:hover {
+    background: #2980b9;
+}
+
+.admin-dashboard p {
+    text-align: center;
+    margin-top: 1rem;
+}
+/* css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.admin-dashboard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard h2, .admin-dashboard h3, .admin-dashboard h4 {
+    color: #333;
+}
+
+.admin-dashboard button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-dashboard button:hover {
+    background-color: #575757;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table td a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+table td a:hover {
+    color: #575757;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+p {
+    color: #333;
+}
